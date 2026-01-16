@@ -9,19 +9,19 @@ class Program
 
     static void PromptUserName(out string userName)
     {
-        Console.Write("Please enter a user name.");
+        Console.Write("Please enter a user name. ");
         userName = Console.ReadLine();
     }
 
     static void PromptUserNumber(out int userNum)
     {
-        Console.Write("Please enter a number to be squared.");
+        Console.Write("Please enter a number to be squared. ");
         userNum = int.Parse(Console.ReadLine());
     }
 
     static void PromptUserBirthYear(out int birthYear)
     {
-        Console.Write("Please enter your birth year.");
+        Console.Write("Please enter your birth year. ");
         birthYear = int.Parse(Console.ReadLine());
     }
 
@@ -32,8 +32,7 @@ class Program
 
     static void DisplayResult(ref string userName, ref int squareNum, ref int birthYear)
     {
-        birthYear++;
-        Console.WriteLine($"{userName}, your number squared is {squareNum}, and you will turn {birthYear} this year if you haven't already.");
+        Console.WriteLine($"{userName}, your number squared is {squareNum}, and you will turn {2026-birthYear} this year if you haven't already.");
     }
 
     static void Main(string[] args)
